@@ -2,34 +2,35 @@ import React from 'react'
 
 const CharacterItem = ({ data, increment }) => {
 
-    const { img, name, birthday, nickname, portrayed, status } = !!data && data[0];
+    const { img, name, birthday, nickname, status, portrayed } = !!data && data[0];
+
 
   return (
     <div className="container">
 
         <div className='card'>
-        <div className='card-inner'>
+          <div className='card-inner'>
             <div className='card-front'>
-            <img src={ img } alt='' />
+              <img src={ img } alt= { nickname } />
             </div>
             <div className='card-back'>
-            <h1>{ name }</h1>
-            <ul>
-                <li>
-                <strong>Actor Name:</strong> { portrayed }
-                </li>
-                <li>
-                <strong>Nickname:</strong> { nickname }
-                </li>
-                <li>
-                <strong>Birthday:</strong> { birthday }
-                </li>
-                <li>
-                <strong>Status:</strong> { status } 
-                </li>
-            </ul>
+              <h1>{ name }</h1>
+              <ul>
+                  <li>
+                    <strong>Actor Name:</strong> { portrayed }
+                  </li>
+                  <li>
+                    <strong>Nickname:</strong> { nickname }
+                  </li>
+                  <li>
+                    <strong>Birthday:</strong> { birthday }
+                  </li>
+                  <li>
+                    <strong>Status:</strong> { status } 
+                  </li>
+              </ul>
             </div>
-        </div>
+          </div>
         </div>
 
         <button onClick={ increment } className="btn">Next Character</button>

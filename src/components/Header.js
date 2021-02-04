@@ -6,7 +6,7 @@ const Header = () => {
         <>
             {/* Header */}
             <header className='center animate__animated animate__jackInTheBox'>
-                <img src='https://res.cloudinary.com/dk3yfcnpo/image/upload/v1612394548/gdiad9armt4utzvls0qc.png' alt='breaking-bad' />
+                <img src='https://res.cloudinary.com/pruebasreact/image/upload/v1612465358/s12wg0mypf32b9udiwlc.png' alt='breaking-bad' />
             </header>
         </>
     )

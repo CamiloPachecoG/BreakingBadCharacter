@@ -6,7 +6,7 @@
   
   html,
   body {
-    background: #000 url('https://res.cloudinary.com/dk3yfcnpo/image/upload/v1612394344/ge3qdncjkqakjaitr8vr.jpg') no-repeat center center/cover;
+    background: #000 url('https://res.cloudinary.com/pruebasreact/image/upload/v1612491341/bg_ufotzd.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +17,7 @@
   }
   
   .container {
-    max-width: 500px;
+    max-width: 380px;
     margin: auto;
     padding: 0 20px;
   }
@@ -51,22 +51,23 @@
   .card {
     cursor: pointer;
     background-color: transparent;
-    height: 300px;
+    height: 350px;
     perspective: 1000px;
   }
   
   .card h1 {
     font-size: 25px;
+    text-align: center;
     border-bottom: 1px #fff solid;
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
   
   .card img {
-    border: 1px solid #ddd;
+    border: 1px solid green;
     border-radius: 8px;
     width: 100%;
-    height: 400px;
+    height: 350px;
 
   }
   
@@ -74,7 +75,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 0.9s;
     transform-style: preserve-3d;
   }
   
@@ -92,21 +93,22 @@
   }
   
   .card-back {
-    background-color: #333;
+    background-color: grey;
     color: white;
     padding: 20px;
     transform: rotateY(180deg);
-    border: 1px solid #ddd;
+    border: 2px solid green;
     border-radius: 8px;
   }
   
   .card li {
     list-style: none;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   .btn{
-    margin-top: 120px;
+    margin-top: 20px;
     border-radius: 16px;
     width: 100%;
   }
